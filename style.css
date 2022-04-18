@@ -35,8 +35,8 @@ ul {
 
 .navbar {
     /* changes the background color of the navbar */
-    background-color: #161f2b;
-    height: 75px;
+    background-color: #035625;
+    height: 90px;
 }
 
 .navbar .container {
@@ -69,24 +69,28 @@ ul {
 
 .navbar a:hover {
     /* adds color to links when hovered over */
-    color: lightblue;
+    color: rgb(219, 97, 97);
 }
 
-.navbar .logo {
-    font-size: 24px;
-    color: #e5e7eb;
-    font-weight: bold;
+.navbar .container .logo {
+    height: 150px;
+    width: 150px;
+    padding-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    object-fit: cover;
 }
 
 .header {
-    background-color: #1f2937;
+    background-color: #036c2e;
+    opacity: 0.9;
     /* min-height makes it so that the text does not overflow into the next box */
     min-height: 400px;
 }
 
 .header img {
     /* setting a max width for the image inside header */
-    max-width: 500px;
+    max-width: 700px;
     padding: 5%;
 }
 
@@ -113,8 +117,8 @@ ul {
 }
 
 .header button {
-    background-color: #3882f6;
-    border: 2px solid black;
+    background-color: #035625;
+    border: 2px solid white;
     color: #e5e7eb;
     padding: 10px;
     margin: 10px;
@@ -127,20 +131,31 @@ ul {
     /* Lets the parent container display flex next to each other */
     display: flex;
     justify-content: space-between;
+    justify-content: center;
+    padding: 50px;
 }
 
 .box {
     /* styles each individual box inside */
     flex: 1;
-    background: aqua;
     border-radius: 10px;
     padding: 15px 20px;
     margin: 5%;
-    box-shadow: 0 3px 5px black;
+    
 }
 
 .box img {
-    max-width: 150px;
+    height: 300px;
+    margin: 10px;
+    box-shadow: 0 3px 5px black;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.box p {
+    text-align: center;
+    font-size: large;
+    color: #1f2937;
 }
 
 .quote {
@@ -175,7 +190,7 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3882f6;
+    background-color: #036c2e;
     padding: 30px 30px;
     color: #e5e7eb;
     flex: auto;
@@ -183,7 +198,7 @@ ul {
 }
 
 .call-action button {
-        background-color: #3882f6;
+        background-color: #035625;
         border: 2px solid #e5e7eb;
         color: #e5e7eb;
         padding: 10px;
