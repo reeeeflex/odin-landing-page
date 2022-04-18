@@ -1,5 +1,15 @@
 # odin-landing-page
 
+Version 0.3 of Landing Page
+------------------------------
+HTML
+* Added call-to-action & footer sections
+
+CSS
+* Added styling for the footer & call to action sections
+
+I was able to create the footer & call to action section with the help of google and a fellow friend to help style the different sections. Now I will begin to incoporate actual images and start styling according to the images. As well as citing the various different places for the images.
+
 Version 0.2 of Landing Page
 ------------------------------
 HTML
