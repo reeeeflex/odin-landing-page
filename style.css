@@ -222,12 +222,25 @@ ul {
 }
 
 
+/* When the pixels of the website reacg 768px this code will run making it look proper on mobile devices */
 @media(max-width: 768px) {
     .header .container {
         flex-direction: column;
         padding-top: 20px;
         text-align: center;
     }
+
+    .header .container .secondary-text {
+        margin-left: 75px;
+    }
+    .header .container .signup {
+        margin-left: 40px;
+    }
+
+    .navbar .container .logo {
+        margin-top: 65px;
+    }
+
     .boxes .container {
         display: block;
         text-align: center;
