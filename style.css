@@ -25,23 +25,18 @@ ul {
     list-style-type: none;
 }
 
-.secondary-text {
-    /* changes css for secondary-text class */
-    font-size: 18px;
-    color: #e5e7eb;
-}
-
 .container {
     /* all code is blocks have a .container class sets the website box around everything */
-    max-width: 1100px;
+    /* max-width makes the size of the website and can be changed to move content around accordinly */
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 30px;
 }
 
 .navbar {
     /* changes the background color of the navbar */
-    background-color: #1f2937;
-    height: 60px;
+    background-color: #161f2b;
+    height: 75px;
 }
 
 .navbar .container {
@@ -85,4 +80,93 @@ ul {
 
 .header {
     background-color: #1f2937;
+    /* min-height makes it so that the text does not overflow into the next box */
+    min-height: 400px;
+}
+
+.header img {
+    /* setting a max width for the image inside header */
+    max-width: 500px;
+    padding: 5%;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header .container {
+    /* the header class has 2 container of the title & text as well as image 
+    doing display: flex lines them up side by side */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .secondary-text {
+    /* changes css for secondary-text class */
+    font-size: 18px;
+    color: #e5e7eb;
+    /* adding some padding to the right of the text so that it doesn't touch the image */
+    padding-right: 15%;
+}
+
+.header button {
+    background-color: #3882f6;
+    border: 2px solid black;
+    color: #e5e7eb;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.boxes .container {
+    /* Lets the parent container display flex next to each other */
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    /* styles each individual box inside */
+    flex: 1;
+    background: aqua;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin: 5%;
+    box-shadow: 0 3px 5px black;
+}
+
+.box img {
+    max-width: 150px;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+}
+
+.quote figcaption {
+    text-align: right;
+}
+
+.quote p{
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1f2937;
+}
+
+
+@media(max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
 }
