@@ -1,0 +1,88 @@
+* {
+    /* This is a website refresh in the universal code */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.secondary-text {
+    /* changes css for secondary-text class */
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.container {
+    /* all code is blocks have a .container class sets the website box around everything */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    /* changes the background color of the navbar */
+    background-color: #1f2937;
+    height: 60px;
+}
+
+.navbar .container {
+    /* Adds flex to the 2 boxes making logo and ul links to space between each other */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Since height of navbar is in .navbar 
+    we can set height to 100% which will adjust the center using flex finding the center of 60px (predetermined height in .navbar) */
+    height: 100%;
+}
+
+.navbar ul {
+    /* doing this makes the ul horizontal rather then vertical */
+    display: flex;
+}
+
+.navbar ul li {
+    /* adding some space between each li */
+    margin-left: 20px;
+}
+
+.navbar a {
+    /* styles the anchor for whatever is inside the navbar class */
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    /* adds color to links when hovered over */
+    color: lightblue;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #e5e7eb;
+    font-weight: bold;
+}
+
+.header {
+    background-color: #1f2937;
+}
